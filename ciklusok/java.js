@@ -186,17 +186,19 @@ for( i=1; i<=90; i++ )
     document.write('</tr>')
     document.write('</table>')
 
-    document.write('<br/>');
-    document.write("20.Feladat: <br>")
-    document.write('<table border=2 id="naptar"> <tr>')
-    for( i=1; i<=31; i++ )
+document.write('<br/>');
+document.write("20.Feladat: <br>")
+document.write('<table border=2 id="naptar">')
+for( i=-4; i<=31; i++ )
+    {
+        
+        if (i<1)
         {
-            document.write('<td>',i, '</td>' )
-            if(i%7 == 0)
-             {
-             document.write('</tr><tr>')
-             }
-             
+        document.write('<tr>',i,'</tr>')
         }
-        document.write('</tr>')
-        document.write('</table>')
+        if(i%7 == 0)
+        {
+        document.write('<br>')
+        }   
+    }
+    document.write('</table>')
