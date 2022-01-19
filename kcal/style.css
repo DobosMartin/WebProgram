@@ -1,0 +1,22 @@
+td {
+    border:1px solid  #e8daef ;
+    background-color:  #e8daef ;
+    border-radius: 5px;
+    text-align: center;
+}
+
+th{
+    border: 1px solid  #bb8fce;
+    background-color:  #bb8fce;
+    border-radius: 5px;
+    text-align: center;
+}
+
+table.sport{
+    border: 1px solid  #bb8fce;
+    border-radius: 5px;
+}
+
+body{
+    text-align: center;
+}

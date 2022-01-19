@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+    <title>Sportok</title>
+</head>
+<body>
+<form name="kalk">
+    <table class="sport">
+        <tr>
+          <th>Sport, mozgás</th>
+          <th>kcal/óra</th>
+          <th>Perc</th>
+          <th>kcal</th>
+        </tr>
+        <tr>
+          <td>Futás</td>
+          <td>680</td>
+          <td><input type='text' name='m1' onkeyup="szamol()" onchange="szamol()" maxlength="5" size="5"></td>
+          <td><input type='text' name='el' maxlength="5" size="5"></td>
+        </tr>
+        <tr>
+            <td>Focizás</td>
+            <td>550</td>
+            <td><input type='text' name='m2' onkeyup="szamol()" onchange="szamol()" maxlength="5" size="5"></td>
+            <td><input type='text' name='el2' maxlength="5" size="5"></td>
+        </tr>
+        <tr>
+            <td>Bringázás</td>
+            <td>480</td>
+            <td><input type='text' name='m3' onkeyup="szamol()" onchange="szamol()" maxlength="5" size="5"></td>
+            <td><input type='text' name='el3' maxlength="5" size="5"></td>
+        </tr>
+        <tr>
+            <td>Hegymászás</td>
+            <td>420</td>
+            <td><input type='text' name='m4' onkeyup="szamol()" onchange="szamol()" maxlength="5" size="5"></td>
+          <td><input type='text' name='el4' maxlength="5" size="5"></td>
+        </tr>
+        <tr>
+            <td>Lovaglás</td>
+            <td>370</td>
+            <td><input type='text' name='m5' onkeyup="szamol()" onchange="szamol()" maxlength="5" size="5"></td>
+          <td><input type='text' name='el5' maxlength="5" size="5"></td>
+        </tr>
+        <tr>
+            <td>Túrázás</td>
+            <td>360</td>
+            <td><input type='text' name='m6' onkeyup="szamol()" onchange="szamol()" maxlength="5" size="5"></td>
+          <td><input type='text' name='el6' maxlength="5" size="5"></td>
+        </tr>
+        <tr>
+            <td>Kajakozás</td>
+            <td>340</td>
+            <td><input type='text' name='m7' onkeyup="szamol()" onchange="szamol()" maxlength="5" size="5"></td>
+            <td><input type='text' name='el7' maxlength="5" size="5"></td>
+        </tr>
+        <tr>
+            <td>Súlyzós edzés</td>
+            <td>320</td>
+            <td><input type='text' name='m8' onkeyup="szamol()" onchange="szamol()" maxlength="5" size="5"></td>
+          <td><input type='text' name='el8' maxlength="5" size="5"></td>
+        </tr>
+        <tr>
+            <td>Ping-Pong</td>
+            <td>270</td>
+            <td><input type='text' name='m9' onkeyup="szamol()" onchange="szamol()" maxlength="5" size="5"></td>
+          <td><input type='text' name='el9' maxlength="5" size="5"></td>
+        </tr>
+        <tr>
+            <td>Kutyasétáltatás</td>
+            <td>200</td>
+            <td><input type='text' name='m10' onkeyup="szamol()" onchange="szamol()" maxlength="5" size="5"></td>
+          <td><input type='text' name='el10' maxlength="5" size="5"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Összesen</td>
+            <td><input type='text'  maxlength="5" size="5"></td>
+          <td><input type='text'  maxlength="5" size="5"></td>
+        </tr>
+        <tr>
+            <td colspan="3">Napi energiaszükséglet (2000kcal) arányban</td>
+          <td><input type='text' maxlength="5" size="5">%</td>
+        </tr>
+    </table>
+</form>
+<input type="button" value="Adatok törlése">
+</body>
+</html>
