@@ -1,12 +1,12 @@
 function Belepes(){
-    var nev= document.getElementById('firstName').value ;
-    var jelszo = document.getElementById('password').value;
-    if(nev == "admin" ||jelszo=="a" ){
-        document.location.href = "main.html";
+    if(document.getElementById('firstName').value != "admin" || document.getElementById('password').value != "a" )
+    {
+        alert('nem');
+        
     }
-    else{
-        alert('nem,nem');
-    }
+    /*else{
+         document.location.href = "main.html";
+    }*/
    
 
 }
