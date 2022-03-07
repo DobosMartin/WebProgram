@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <title>Test Regisztráció</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="center">
+        <h1>Regisztráció</h1>
+        <form action="login.php" method="post">
+        <div class="txt_field">
+            <input type="text" class="form-control" id="firstName" name="firstName" required />
+            <span></span>
+            <label>Vezetéknév</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" class="form-control" id="lastName" name="lastName" required/>
+            <span></span>
+            <label>Keresztnév</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" class="form-control" id="email" name="email" required/>
+            <span></span>
+            <label>Email</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" class="form-control" id="password" name="password" required/>
+            <span></span>
+            <label>Jelszó</label>
+        </div>
+            <input type="submit" class="btn btn-primary" />
+    </form>
+    </div>
+  </body>
+</html>
