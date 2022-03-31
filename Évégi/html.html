@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" lang="hu">
+
+</head>
+<body>
+	<p>A HTML form elem  egy űrlapot határoz meg, amelyet felhasználói adatbevitelre használunk, amit ezután el lehet küldeni egy kiszolgálóra feldolgozásra.</p>
+	<p>Az űrlapnak name attribútumot kell adni, hogy a későbbiek során az űrlapra ezzel a névvel tudjunk hivatkozni.</p>
+	<p>A névnek betűvel kell kezdődnie és ne tartalmazzon ékezetet, illetve speciális karaktert</p>
+	<p>A <code>&lt;form&gt;</code> és <code>&lt;/form&gt;</code> tag-ek közé kell elhelyezni az űrlap elemeit, amelyek a következők lehetnek:</p>
+	<form name="minden" >
+		
+		<ul>
+		<li>label: címke
+			<br>attribútuma:
+			<ul>
+				<li>for<br>
+				<code>&lt;label for="vnev"&gt;</code>Vezetéknév<code>&lt;/label&gt;</code><br>
+				- hasznos a képernyőolvasó felhasználók számára, mivel a képernyőolvasó hangosan felolvassa a címkét, amikor a felhasználó a bemeneti elemre mutat<br>
+				- ha megegyezik az input elem id attribútumával, akkor  összekapcsolja őket.<br>
+				<label for="vnev">Vezetéknév:</label>
+				</li>
+			</ul>
+		</li>
+		
+		<li>input: beviteli mező
+			<br>attribútumai:
+			<ul>
+				<li>text: egysoros szövegbeviteli mező<br>
+					<code>&lt;input type="text" id="vnev" name="ezzel a névvel hivatkozol majd rá: vnev" value="kezdőérték, amit nem célszerű megadni, ha a felhasználónak ki kell törölnie" maxlength="ennyi karaktert tudsz bevinni, most 15" size="méret, most 3"&gt;</code><br>
+					<label for="vnev">Vezetéknév:</label>
+					<input type="text" id="vnev" name="vnev" value="kezdőérték" maxlength="15" size="3">
+				</li>
+				<li>number: szám<br>
+					<code>&lt;input type="number" id="kor" name="kor" value="25" maxlength="3" size="3" min="0" max="110 required-kötelező readonly-csakolvasható"&gt;</code><br>
+					<label for="kor">Életkorod:</label>
+					<input type="number" id="kor" name="kor" value="25" maxlength="3" size="3" min="0" max="110">				
+				</li>
+				<li>radio: választógomb<br>					
+					<code>&lt;input type="radio" name="gender" id="no" value="nő" checked-kiválasztott, csak egy lehet &gt;</code><br>
+					<input type="radio" name="gender" id="ffi" value="férfi">
+					<label for="ffi">Férfi</label><br>
+					<input type="radio" name="gender" id="no" value="nő" checked>
+					<label for="no">Nő</label><br>
+					- fontos, hogy az összetartozó választógombok mindegyike ugyanazt a nevet (name) kapja, a value-val különböztetjük meg őket.<br>
+					-olyankor érdemes használnunk, ha több választási lehetőség van, és azokból egyet  választhatunk.
+				</li>
+				<li>checkbox: jelölőnégyzet<br>
+					<code>&lt;input type="checkbox" name="adalekok" id="citrom" value="citrom" checked-kiválasztott-lehet többet is &gt;</code><br>
+					<label for="cukor">Adalékok:</label><br>
+					<input type="checkbox" name="adalekok" id="cukor" value="cukor">
+					<label for="cukor">cukor</label><br>
+					<input type="checkbox" name="adalekok" id="citrom" value="citrom">
+					<label for="citrom">citrom</label><br>
+					- olyankor érdemes használnunk, ha több választási lehetőség van, és azokból akármennyit választhatunk.
+				</li>
+				<li>button: nyomógomb, általában JavaScript feldolgozáshoz<br>
+					<code>&lt;input type="button" id="sz" value="Számol" onclick="szamol();" &gt;</code><br>	
+					<input type="button" id="sz" value="Számol" onclick="szamol();">
+				</li>
+				<li>submit: nyomógomb, általában szerver oldali PHP feldolgozáshoz<br>
+					<code>&lt;input type="submit" value="Elküld" &gt;</code><br>	
+					<input type="submit" value="Elküld" >
+				</li>
+				<li>reset: alaphelyzetbe állítás, törlés<br>
+					<code>&lt;input type="reset" value="Alaphelyzet" &gt;</code><br>
+					<input type="reset" value="Alaphelyzet" >
+				</li>
+				<li>image: kép típusú gomb<br>
+					<code>&lt;input type="image" src="kep.jpg" name="kep" id="kep" alt="Ez itt a kép helye, kattints rám!" &gt;</code><br>
+					<input type="image" src="kep.jpg" name="kep" id="kep" alt="Ez itt a kép helye, kattints rám!">
+				</li>
+				<li>color: színválasztó<br>
+					<code>&lt;input type="color" name="szin" &gt;</code><br>
+					<label for="szin">Választott szín:</label>
+					<input type="color" name="szin">
+				</li>
+				<li>email<br>
+					<code>&lt;input type="email" size="30" name="emailcim" id="emailcim" kötelező-required&gt;</code><br>
+					<label for="emailcim">E-mail cím*:</label>
+					<input type="email" size="30" name="emailcim" id="emailcim" required>				
+				</li>
+				<li>password: jelszó<br>
+					<code>&lt;input type="password" name="jelszo" maxlength="15" kötelező-required&gt;</code><br>
+					<label for="jelszo">Jelszó*:</label>
+					<input type="password" name="jelszo" maxlength="15" required>
+					<br>
+				</li>
+				<li>file: fájl-tallózó<br>
+					<code>&lt;input type="file" name="fajl" id="fajl" accept="elfogadott fájl típusa .pdf"&gt;</code><br>				
+					<label for="fajl">Válaszd ki a fájlt!</label>
+					<input type="file" name="fajl" id="fajl" accept=".pdf"><br>
+					- azt is megadhatjuk, hogy milyen típusú fájlok az elfogadottak: audio, video, image, kiterjesztés is megadható, pl: .pdf
+				</li>
+				<li>date: dátum bevitele<br>
+					<code>&lt;input type="date" name="datum" id="datum" min="2020-05-28" max="2030-05-27"&gt;</code><br>
+					<label for="datum">dátum (év-hónap-nap):</label>
+					<input type="date" name="datum" id="datum" min="2020-05-28" max="2030-05-27">				
+				</li>
+				<li>time: időpont bevitele<br>
+					<code>&lt;input type="time" name="ido" id="ido" min="08:00" max="14:00"&gt;</code><br>
+					<label for="ido">Időpont választása (óra:perc):</label>
+					<input type="time" name="ido" id="ido" min="08:00" max="14:00">	
+				</li>									
+				<li>tel: telefonszám<br>				
+					<label for="telefonszam">Telefonszám:<br>
+					Formátum: +36-körzetszám-123-4567 </label>
+					<input type="tel" size="15" name="telefonszam" id="telefonszam"  maxlength="15" placeholder="+36-99-123-456" pattern="[\+]36[\-]\d{1,2}[\-]\d{3}[\-]\d{3,4}">		
+				</li>
+				<li>textarea: többsoros beviteli mező<br>
+					- páros tag!!!!<br>
+					<code>&lt;textarea cols="50" rows="10" name="szoveg" placeholder="Ide írj!" required&gt;&lt;/textarea&gt;</code><br>
+					<label for="szoveg">Ide írj!:<br>
+					<textarea cols="50" rows="10" name="szoveg" placeholder="Ide írj!" required></textarea>
+				
+				</li>
+				<li>select  option: legördülő lista<br>
+					<code>&lt;select name="tantargyak" id="tantargyak"&gt;</code><br>
+					<code>     &lt;option value="info"&gt;</code>Informatika<code>&lt;/option&gt;</code><br>
+					<code>     &lt;option value="matek" selected-ez az alapértelmezett&gt;</code>Matematika<code>&lt;/option&gt;</code><br>	
+					<code>&lt;/select &gt;</code><br>
+					<label for="tantargyak">Válassz tantárgyat!:</label>
+					<select name="tantargyak" id="tantargyak">
+					  <option value="info">Informatika</option>
+					  <option value="matek" selected>Matematika</option>
+					  <option value="tesi">Testnevelés</option>
+					  <option value="angol">Angol</option>
+					</select> 				
+				</li>				
+			</ul>
+		</li>
+		</ul>
+	</form>
+	
+	<script>
+		function szamol()
+		{
+			document.getElementById("sz").style.backgroundColor="yellow";
+			document.getElementById("sz").value="sz";
+		}
+
+	</script>
+
+
+</body>
+</html>

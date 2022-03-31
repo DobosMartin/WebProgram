@@ -1,0 +1,18 @@
+div.kocka{
+	width:96%;
+	background: #E8732B;
+	padding:15px;
+	font-size:38px;
+	text-align:center;
+	margin:15px;
+	align: center;
+}
+
+button{
+	width: 99%;
+	height: 30px;
+}
+
+osszeg.innerHTML.osszeguk{
+	text-align: center;
+}

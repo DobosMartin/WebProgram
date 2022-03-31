@@ -1,0 +1,78 @@
+body{
+    background-color: #FF9700;
+    color:#ffffff; 
+}
+h1
+	{
+		text-align: center;		
+	}
+#vonal{
+    height: 10px;
+    background-color: black;
+    margin: 10px;
+}
+h1#focim{
+    width: 420px;
+    margin: auto;padding: 32px;
+    border-radius: 30px;
+    font-size: 24px;
+    
+}
+div.tart{
+    background-color: #e58700;
+	 background-image: url(devon.jpg);
+    background-repeat: no-repeat;
+    background-position:right;
+	background-size: 400px 300px;
+}
+
+h1#focim{
+	background-image: url(s.jpg);
+}
+
+div.tart{
+    padding: 40px;
+    border-radius: 54px;
+    text-align: justify;
+    margin: 20px;
+	max-width: 1300px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.kiskep{
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin: 4px;
+    border-radius: 6px;
+    background-color: black;
+    text-align: center;
+    line-height: 130px;
+    
+}
+div.kiskep img{
+    max-width: 118px;
+    max-height: 118px;
+    border-radius: 2px;
+    vertical-align:middle;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+div.up{
+	font-size: 20px;
+	font-weight: bold;
+}

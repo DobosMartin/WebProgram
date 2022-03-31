@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta lang="hu" />
+		<meta charset="utf8" />
+		<link rel="stylesheet" type="text/css" href="css.css"/>
+		<script type="text/javascript" src="java.js"></script>
+		<title>Számológép</title>
+    </head>
+    <body>
+        <div id='szam-ol'>
+  
+          <form name="szamologep">
+            
+            <input type="text" name="szamok" />
+            <br>
+            
+            <input type="button" value="1" onclick="szamologep.szamok.value += '1'" />
+            <input type="button" value="2" onclick="szamologep.szamok.value += '2'" />
+            <input type="button" value="3" onclick="szamologep.szamok.value += '3'" />
+            <input type="button" value="+" onclick="szamologep.szamok.value += '+'" />
+            <br/>
+            
+            <input type="button" value="4" onclick="szamologep.szamok.value += '4'" />
+            <input type="button" value="5" onclick="szamologep.szamok.value += '5'" />
+            <input type="button" value="6" onclick="szamologep.szamok.value += '6'" />
+            <input type="button" value="-" onclick="szamologep.szamok.value += '-'" />
+            </br>
+          
+            <input type="button" value="7" onclick="szamologep.szamok.value += '7'" />
+            <input type="button" value="8" onclick="szamologep.szamok.value += '8'" />
+            <input type="button" value="9" onclick="szamologep.szamok.value += '9'" />
+            <input type="button" value="x" onclick="szamologep.szamok.value += '*'" />
+            </br>
+        
+            <input type="button" value="c" onclick="szamologep.szamok.value = ''" />
+            <input type="button" value="0" onclick="szamologep.szamok.value += '0'" />
+            <input type="button" value="=" onclick="szamologep.szamok.value = eval(szamologep.szamok.value)" />
+            <input type="button" value="/" onclick="szamologep.szamok.value += '/'" />
+            </br>
+  
+    
+          </form>
+
+
+
+    </body>
+<html>

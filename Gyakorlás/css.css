@@ -1,0 +1,145 @@
+.atlatszo{
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	background-attachment: fixed;
+}
+
+body{
+	background-color: #2F2A2A ;
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+header{
+	background: #55d6aa;
+}
+
+header::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo{
+	float: left;
+	padding: 10px 0;
+}
+
+nav{
+	float: right;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-stlye: none;
+}
+
+nav li{
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
+	position: relative;
+}
+
+nav a{
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+nav a:hover{
+	color: #000;
+}
+
+nav a::before{
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #444;
+	position: absolute;
+	top: 10;
+	width: 0%;
+	
+	transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before{
+	width: 100%
+}
+
+.manual{
+	position: absolute;
+	top: 30%;
+	left: 67%;
+	transform: translate(-50%, -40%);
+}
+
+.fontos{
+	display: block;
+	position: absolute;
+	top: 61%;
+	left: 50%;
+	right: 50%;
+	transform: translate(-61%, -50%);
+}
+
+.hely{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-70%, -50%);
+}
+
+.film{
+	position: absolute;
+	top: 75%;
+	left: 70%;
+	transform: translate(-70%, -50%);
+}
+
+.vlog{
+	position: absolute;
+	top: 75%;
+	right: 25%;
+	transform: translate(-75%, -25%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

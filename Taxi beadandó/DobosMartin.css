@@ -1,0 +1,36 @@
+h1{
+    font-variant: small-caps;
+    text-align: center;
+    font-size:50px;
+    font-weight:bolder;
+}
+
+
+a{
+    text-decoration: none;
+    color: yellow;
+}
+
+.style{
+    display: inline-block;
+    max-width: 930px;
+    margin: 0 auto;
+    width: auto;
+    padding: 15px;
+}
+
+body{
+    background-color:#fff8dc;
+   
+}
+
+.left{
+    float:left;
+    margin-right:10px;
+    float: left;
+}
+
+hr{
+    border-color:#ff0;
+    margin-bottom:30px;
+}

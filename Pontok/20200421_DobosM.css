@@ -1,0 +1,26 @@
+table.matrix tr td
+{
+	width            : 8px   ;
+	height           : 8px   ;
+}
+
+div.pont
+{
+	width            : 8px   ;
+	height           : 8px   ;
+	border-radius    : 50%   ;
+	background-color : #66A  ;
+}
+
+table.masik tr td
+{
+	width            : 8px   ;
+	height           : 8px   ;
+}
+
+div.ketto
+{
+	width            : 8px   ;
+	height           : 8px   ;
+	border-radius    : 100%   ;
+	background-color : #66A  ;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<meta lang="hu">
+	<link rel="stylesheet" href="DobosMartin.css">
+	<script src="DobosMartin.js"></script>
+	<title>Iskolai jegy vásárlás</title>
+</head>
+<body>
+	<div class="magic">
+		<h1>Jegy vásárlás</h1> 
+		<hr color=#B22EB8 ; style=width:100% ; text-align=center></hr>
+			<div class="lenyeg">
+				<p style=text-align:center>⚠️Fizetés PayPal vagy kézpénz az iskolában⚠️</p>
+				<p class="p">Melyik tantárgyból kell az ötös?</p>
+				<select name="tantargyak" id="tantargyak" onchange="get">
+				<option value="tesi">Testnevelés - 1 Millió forint</option>
+				<option value="matek" >Matematika - 30 Milliárd forint</option>
+				<option value="biosz" >Biológia - 6 Millió forint</option>
+				<option value="foci" >Földrajz - 5 Millió forint</option>
+				<option value="info" >Informatika - 3 Millió forint</option>
+				<option value="fizika" >Fizika - 40 Millió forint</option>
+				<option value="angol" >Angol - 4 Milliárd forint</option>
+				<option value="nemet" >Német - 4 Milliárd forint</option>
+				<option value="szakma" >Összes szakmai tantárgy 2 Billió forint</option>
+				</select >
+				<br>
+				<p class="p">Email címed?</p>
+				<input type="email" id="emailcim" size="64" placeholder="Enter email" name="email">
+				<br>
+				<div class="time">
+					<p class="p">Mikorra szeretnéd az ötöst?</p>
+					<input type="date" name="datum" id="datum" min="2019-09-10" max="2030-05-27" class="egy">
+					<p class="p">Idő megszabása</p>
+					<input type="time" name="ido" id="ido" min="08:00" max="14:00" class="egy">	
+					<p class="p">Telefonszámod?</p>
+					<input type="tel" size="15" name="telefonszam" id="telefonszam"  maxlength="15" placeholder="+36-99-123-456">
+					<p class="p">Kártyaszámod?</p>
+					<input type="szam" size="15" name="kartyaszam" id="kartyaszam"  maxlength="15" placeholder="XXX-XXX-XXX-XXX-XXX" >
+					<p>Írd ide a neved és az osztályod és, hogy megbízható -e vagy.</p>
+					<textarea cols="50" rows="10" name="szoveg" placeholder="Ide írj!" required></textarea>
+				</div>
+				<br>
+				<p>Fizetendő összeg:</p>
+			</div>
+			<br>
+		<div >
+		<a href="Köszönjük.html">
+		<button id="fizet"; align="center">Vissza</button>
+		</a>
+		</div>
+		<p>
+			<p class="rek">⚠️Mivel ez egy Titkos oldal és mivel HACK ezért sok adat kell. Reklamációt nem fogadunk el⚠️</p>
+		</p>
+	</div>
+</body>
+</html>
